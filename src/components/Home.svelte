@@ -26,18 +26,14 @@
   </label>
 </div>
 
-<p>
-  {$route.query.a} + {$route.query.b} = {$route.query.a + $route.query.b}
-</p>
+{#if typeof $route.query.a !== 'undefined' && typeof $route.query.b !== 'undefined'}
+  <p>
+    {$route.query.a} + {$route.query.b} = {$route.query.a + $route.query.b}
+  </p>
+{:else}
+  <p>Try to change values above</p>
+{/if}
 
 <script>
   import { route } from '../stores'
-
-  if (typeof $route.query.a === 'undefined') {
-    $route.query.a = 0
-  }
-
-  if (typeof $route.query.b === 'undefined') {
-    $route.query.b = 0
-  }
 </script>

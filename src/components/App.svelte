@@ -1,6 +1,6 @@
 <main>
 	<header>
-		<h1>svelte-store-router</h1>
+		<h1><a href="https://github.com/zyxd/svelte-store-router">svelte-store-router</a></h1>
 		<nav>
 			<ul>
 				<li><a href="/">Home</a></li>
@@ -50,6 +50,11 @@
 		font-size: 2rem;
 		font-weight: 100;
 		text-align: center;
+	}
+
+	h1 > a {
+		color: inherit;
+		text-decoration: none;
 	}
 
 	nav > ul {

@@ -4,8 +4,8 @@
 		<nav>
 			<ul>
 				<li><a href="/">Home</a></li>
-				<li><a href="/one">Page 1</a></li>
-				<li><a href="/two">Page 2</a></li>
+				<li><a href="/users/1">User 1</a></li>
+				<li><a href="/users/2">User 2</a></li>
 				<li><a href="/not/existing/page">Not existing page</a></li>
 				<li><a href="https://google.com">External link</a></li>
 			</ul>
@@ -16,11 +16,11 @@
 		<Match path={$route.path} pattern="/">
 			<Home/>
 		</Match>
-		<Match path={$route.path} pattern="/one">
-			<Page1/>
+		<Match path={$route.path} pattern="/users/:id" let:params={{ id }}>
+			<User {id}/>
 		</Match>
-		<Match path={$route.path} pattern="/two">
-			<Page2/>
+		<Match path={$route.path} pattern="/users/:id/documents" let:params={{ id }}>
+			<UserDocuments {id}/>
 		</Match>
 		<Match path={$route.path}>
 			<PageNotFound/>
@@ -32,8 +32,8 @@
 	import { Matcher, Match } from 'svelte-store-router'
 	import { route } from '../stores'
 	import Home from './Home.svelte'
-	import Page1 from './Page1.svelte'
-	import Page2 from './Page2.svelte'
+	import User from './User.svelte'
+	import UserDocuments from './UserDocuments.svelte'
 	import PageNotFound from './PageNotFound.svelte'
 </script>
 
@@ -63,6 +63,7 @@
 		margin: 0 0 2rem 0;
 		padding: 0;
 		justify-content: space-between;
+		flex-wrap: wrap;
 	}
 
 	nav > ul > li {

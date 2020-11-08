@@ -86,7 +86,7 @@
 
 <style>
   h1 {
-    font-size: 1.3rem;
+    font-size: 1rem;
     margin: 0;
   }
 
@@ -99,13 +99,14 @@
 
   label {
     display: block;
-    margin-bottom: 1.5rem;
+    margin-bottom: 1rem;
+    font-size: 0.8rem;
   }
 
   h2 {
     margin: 0 0 0.3rem 0;
-    font-size: 1rem;
     font-weight: normal;
+    font-size: 0.8rem;
   }
 
   input {
@@ -133,6 +134,7 @@
 
   button {
     margin: 0;
+    font-size: 0.8rem;
   }
 
   button:hover {

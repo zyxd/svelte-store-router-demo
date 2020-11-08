@@ -118,13 +118,13 @@
   textarea {
     display: block;
     width: 100%;
-    height: 5rem;
+    height: 3.5rem;
     resize: none;
     font-style: italic;
   }
 
   p {
-    font-size: 0.8rem;
+    font-size: 0.6rem;
   }
 
   .buttons {

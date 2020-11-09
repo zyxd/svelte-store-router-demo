@@ -31,7 +31,7 @@
     -webkit-backdrop-filter: brightness(50%) blur(4px);
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     overflow: hidden;
   }
 

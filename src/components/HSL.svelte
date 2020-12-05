@@ -18,6 +18,4 @@
 	import { fly } from 'svelte/transition'
 	import { route } from '../stores'
 	import Button from './Button.svelte'
-	
-	$route.query.hue = $route.query.hue || 0
 </script>

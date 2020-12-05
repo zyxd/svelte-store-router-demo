@@ -1,10 +1,11 @@
-<div class="modal">
+<div class="modal" transition:fade={{ duration: 200 }}>
   <div class="form" use:clickOutside={() => dispatch('close')}>
     <slot/>
   </div>
 </div>
 
 <script>
+  import { fade } from 'svelte/transition'
   import { createEventDispatcher, onMount } from 'svelte'
   import clickOutside from '../actions/clickOutside'
 

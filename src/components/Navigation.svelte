@@ -7,7 +7,10 @@
       <a href="/hsl">HSL sandbox page</a>
     </li>
     <li>
-      <a href="/notfound">Not found page</a>
+      <a href="/not-existing-page">Not existing page</a>
+    </li>
+    <li>
+      <a href="/another-not-existing-page">Another not existing page</a>
     </li>
   </ul>
 </nav>
@@ -18,7 +21,7 @@
     margin: 1.5rem 0;
     padding: 0;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
   }
 
   ul > li {

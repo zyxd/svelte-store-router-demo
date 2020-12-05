@@ -16,6 +16,9 @@
 		<Match path={$route.path} pattern="/">
 			<Books/>
 		</Match>
+		<Match path={$route.path} pattern="/hsl">
+			<HSL/>
+		</Match>
 		<Match path={$route.path}>
 			<PageNotFound/>
 		</Match>

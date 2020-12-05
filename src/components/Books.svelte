@@ -97,5 +97,6 @@
   table > tbody > tr:hover {
     cursor: pointer;
     background-color: hsl(0, 0%, 70%);
+    color: hsl(0, 0%, 98%);
   }
 </style>

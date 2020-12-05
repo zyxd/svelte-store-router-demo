@@ -1,3 +1,7 @@
+<svelte:head>
+  <title>HSL sandbox - svelte-store-router demo</title>
+</svelte:head>
+
 <div in:fly={{ y: 200 }}>
 	<Button disabled={$route.query.disabled} hue={($route.query.hue || 0) + 120}>Success</Button>
 	<Button disabled={$route.query.disabled} hue={($route.query.hue || 0) + 220}>Info</Button>

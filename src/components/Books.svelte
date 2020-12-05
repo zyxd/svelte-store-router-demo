@@ -1,3 +1,11 @@
+<svelte:head>
+  {#if Number.isInteger($route.fragment.edit)}
+    <title>Edit {$route.fragment.edit} - Books - svelte-store-router demo</title>
+  {:else}
+    <title>Books - svelte-store-router demo</title>
+  {/if}  
+</svelte:head>
+
 <div in:fly={{ y: 200 }}>
   <input bind:value={$route.query.search} placeholder="Search">
 

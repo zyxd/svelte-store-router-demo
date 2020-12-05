@@ -24,7 +24,7 @@
 
 <script>
 	import { Matcher, Match } from 'svelte-store-router'
-	import { books, route } from '../stores'
+	import { route } from '../stores'
 	import Books from './Books.svelte'
 	import PageNotFound from './PageNotFound.svelte'
 </script>

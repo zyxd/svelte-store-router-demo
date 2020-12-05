@@ -10,6 +10,7 @@
 				The Guardian: The 100 greatest novels of all time
 			</a>
 		</h2>
+		<Navigation/>
 	</header>
 
 	<Matcher>
@@ -29,7 +30,9 @@
 	import { Matcher, Match } from 'svelte-store-router'
 	import { route } from '../stores'
 	import Books from './Books.svelte'
+	import HSL from './HSL.svelte'
 	import PageNotFound from './PageNotFound.svelte'
+	import Navigation from './Navigation.svelte'
 </script>
 
 <style>

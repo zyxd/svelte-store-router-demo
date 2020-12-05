@@ -21,6 +21,10 @@
       {/each}
     </tbody>
   </table>
+
+  <a href="https://www.theguardian.com/books/2003/oct/12/features.fiction">
+    The Guardian: The 100 greatest novels of all time
+  </a>
 </div>
 
 {#if Number.isInteger($route.fragment.edit)}
@@ -101,5 +105,13 @@
     cursor: pointer;
     background-color: hsl(0, 0%, 70%);
     color: hsl(0, 0%, 98%);
+  }
+
+  a {
+    display: block;
+    font-size: 0.8rem;
+    font-style: italic;
+    text-align: center;
+    padding: 1rem 0;
   }
 </style>

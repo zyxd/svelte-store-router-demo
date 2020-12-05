@@ -17,11 +17,6 @@
     <textarea bind:value={$route.fragment.description}></textarea>
   </label>
 
-  <p>
-    You can try to edit any fields and reload page before save or close this window.
-    The entered data should not be lost.
-  </p>
-
   <hr>
   <div class="buttons">
     <div>
@@ -121,10 +116,6 @@
     height: 3.5rem;
     resize: none;
     font-style: italic;
-  }
-
-  p {
-    font-size: 0.6rem;
   }
 
   .buttons {

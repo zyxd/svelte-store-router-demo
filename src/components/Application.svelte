@@ -5,11 +5,9 @@
 				svelte-store-router
 			</a>
 		</h1>
-		<h2>
-			<a href="https://www.theguardian.com/books/2003/oct/12/features.fiction">
-				The Guardian: The 100 greatest novels of all time
-			</a>
-		</h2>
+		<p>
+			You can try to reload this page, copy link to another browser, navigate forward or backward – entered data should not be lost
+		</p>
 		<Navigation/>
 	</header>
 
@@ -40,7 +38,7 @@
 		margin: 0 auto;
 	}
 
-	h1, h2 {
+	h1 {
 		color: #ff3e00;
 		text-transform: uppercase;
 		font-size: 1.5rem;
@@ -50,14 +48,12 @@
 		padding: 0.4rem 0;
 	}
 
-	h2 {
-		font-size: 1rem;
-		font-weight: 100;
+	h1 > a {
+		color: inherit;
 	}
 
-	h1 > a,
-	h2 > a {
-		color: inherit;
+	p {
+		font-size: 0.8rem;
 	}
 
 	@media (min-width: 640px) {

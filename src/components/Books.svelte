@@ -1,25 +1,27 @@
-<input bind:value={$route.query.search} placeholder="Search">
+<div in:fly={{ y: 200 }}>
+  <input bind:value={$route.query.search} placeholder="Search">
 
-<table>
-  <thead>
-    <tr>
-      <th on:click={() => $route.query.sort = null}>Id</th>
-      <th on:click={() => $route.query.sort = 'title'}>Title</th>
-      <th on:click={() => $route.query.sort = 'author'}>Author</th>
-      <th on:click={() => $route.query.sort = 'description'}>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    {#each sort(search($books, $route.query.search), $route.query.sort) as book}
-      <tr on:click={() => $route.fragment.edit = book.id}>
-        <td>{book.id}</td>
-        <td>{book.title}</td>
-        <td>{book.author}</td>
-        <td>{book.description}</td>
+  <table>
+    <thead>
+      <tr>
+        <th on:click={() => $route.query.sort = null}>Id</th>
+        <th on:click={() => $route.query.sort = 'title'}>Title</th>
+        <th on:click={() => $route.query.sort = 'author'}>Author</th>
+        <th on:click={() => $route.query.sort = 'description'}>Description</th>
       </tr>
-    {/each}
-  </tbody>
-</table>
+    </thead>
+    <tbody>
+      {#each sort(search($books, $route.query.search), $route.query.sort) as book}
+        <tr on:click={() => $route.fragment.edit = book.id}>
+          <td>{book.id}</td>
+          <td>{book.title}</td>
+          <td>{book.author}</td>
+          <td>{book.description}</td>
+        </tr>
+      {/each}
+    </tbody>
+  </table>
+</div>
 
 {#if Number.isInteger($route.fragment.edit)}
   <BookEdit
@@ -29,6 +31,7 @@
 {/if}
 
 <script>
+  import { fly } from 'svelte/transition'
   import { books, route } from '../stores'
   import BookEdit from './BookEdit.svelte'
 

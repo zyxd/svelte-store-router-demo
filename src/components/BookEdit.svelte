@@ -40,7 +40,7 @@
   export let id
 
   const dispatch = createEventDispatcher()
-  const { title, author, description } = $books.find(b => b.id === id)
+  const { title, author, description } = $books.find(b => b.id === id) || {}
 
   const close = () => {
     $route.fragment.title = null

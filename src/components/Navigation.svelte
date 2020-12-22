@@ -7,6 +7,9 @@
       <a href="/hsl">HSL sandbox page</a>
     </li>
     <li>
+      <a href="/nested">Nested pages</a>
+    </li>
+    <li>
       <a href="/not-existing-page">Not existing page</a>
     </li>
     <li>

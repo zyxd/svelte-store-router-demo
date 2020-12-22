@@ -18,6 +18,9 @@
 		<Match path={$route.path} pattern="/hsl">
 			<HSL/>
 		</Match>
+    <Match path={$route.path} pattern="/nested" loose>
+      <Nested/>
+		</Match>
 		<Match path={$route.path}>
 			<PageNotFound/>
 		</Match>
@@ -31,6 +34,7 @@
 	import HSL from './HSL.svelte'
 	import PageNotFound from './PageNotFound.svelte'
 	import Navigation from './Navigation.svelte'
+  import Nested from './Nested.svelte'
 </script>
 
 <style>

@@ -32,4 +32,8 @@
     padding: 0;
     text-align: center;
   }
+
+  ul > li > a {
+    font-size: 0.8rem;
+  }
 </style>

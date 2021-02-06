@@ -62,9 +62,9 @@
   const search = (books, str) => {
     return [...books].filter(book => {
       if (str) {
-        return book.title.toLowerCase().includes(str)
-          || book.author.toLowerCase().includes(str)
-          || book.description.toLowerCase().includes(str)
+        return book.title.toLowerCase().includes(str.toLowerCase())
+          || book.author.toLowerCase().includes(str.toLowerCase())
+          || book.description.toLowerCase().includes(str.toLowerCase())
       } else {
         return true
       }

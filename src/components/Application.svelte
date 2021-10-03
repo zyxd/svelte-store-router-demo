@@ -12,23 +12,23 @@
 	</header>
 
 	<Matcher>
-		<Match path={$route.path} pattern="/">
+		<Match route={$route} pattern="/">
 			<Books/>
 		</Match>
-		<Match path={$route.path} pattern="/hsl">
+		<Match route={$route} pattern="/hsl">
 			<HSL/>
 		</Match>
-    <Match path={$route.path} pattern="/nested" loose>
+    <Match route={$route} pattern="/nested" loose>
       <Nested/>
 		</Match>
-		<Match path={$route.path}>
+		<Match route={$route}>
 			<PageNotFound/>
 		</Match>
 	</Matcher>
 </main>
 
 <script>
-	import { Matcher, Match } from 'svelte-store-router'
+	import { Matcher, Match, match } from 'svelte-store-router'
 	import { route } from '../stores'
 	import Books from './Books.svelte'
 	import HSL from './HSL.svelte'

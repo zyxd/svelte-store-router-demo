@@ -28,7 +28,7 @@
 </main>
 
 <script>
-	import { Matcher, Match, match } from 'svelte-store-router'
+	import { Matcher, Match } from 'svelte-store-router'
 	import { route } from '../stores'
 	import Books from './Books.svelte'
 	import HSL from './HSL.svelte'

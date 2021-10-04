@@ -1,19 +1,19 @@
 <nav>
   <ul>
     <li>
-      <a href="/">Books page</a>
+      <a href=".">Books page</a>
     </li>
     <li>
-      <a href="/hsl">HSL sandbox page</a>
+      <a href="hsl">HSL sandbox page</a>
     </li>
     <li>
-      <a href="/nested">Nested pages</a>
+      <a href="nested">Nested pages</a>
     </li>
     <li>
-      <a href="/not-existing-page">Not existing page</a>
+      <a href="not-existing-page">Not existing page</a>
     </li>
     <li>
-      <a href="/another-not-existing-page">Another not existing page</a>
+      <a href="another-not-existing-page">Another not existing page</a>
     </li>
   </ul>
 </nav>

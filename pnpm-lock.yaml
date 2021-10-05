@@ -26,7 +26,7 @@ devDependencies:
   rollup-plugin-svelte: 7.1.0_rollup@2.58.0+svelte@3.43.1
   rollup-plugin-terser: 7.0.2_rollup@2.58.0
   svelte: 3.43.1
-  svelte-store-router: 2.0.2_svelte@3.43.1
+  svelte-store-router: 2.0.3_svelte@3.43.1
 
 packages:
 
@@ -634,8 +634,8 @@ packages:
       has-flag: 4.0.0
     dev: true
 
-  /svelte-store-router/2.0.2_svelte@3.43.1:
-    resolution: {integrity: sha512-Y0ND5pyXDFppL77xgQQnBUwWzLQ0oDB8Gym7T0/ZkGyFUXqUxNlSEcep71/QiZ+UY2hUEKZuG8hsZxctVezgRQ==}
+  /svelte-store-router/2.0.3_svelte@3.43.1:
+    resolution: {integrity: sha512-zsLeYWSucG+zgsE6FAOoF3G1Nft4sw1jvkFG5q0Hd7FSJfRHfy3bTIt2qebFpRUZZun1lHV+82G14PhyJRxh/g==}
     peerDependencies:
       svelte: ^3.0.0
     dependencies:
